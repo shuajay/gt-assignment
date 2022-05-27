@@ -98,7 +98,8 @@ public class RandomRectangleGUI{
 		public class SizeListener implements ActionListener {
 			public void actionPerformed(ActionEvent event) {
 				randomSize();
-				drawPanel.setSize(width, height);
+				Dimension d = new Dimension(width, height);
+				drawPanel.setSize(d);
 			}
 		}
 	}
